@@ -1,24 +1,14 @@
-body{
-    background-image: url(clock.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+body {
+    background-image: url('clock.jpg');
     background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-}
-#clock-co{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-#clock{
-    font-family: monospace;
-    font-size: 9%;
-    font-weight: bold;
+    background-position: center;
+  }
+  
+  .clock {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    color: #333;
     text-align: center;
-    color: white;
-    backdrop-filter: blur(5px);
-    background-color: hsla(0,0%,100%,0.1);
-    width:100%;
-}
+    margin-top: 30vh;
+  }
+  

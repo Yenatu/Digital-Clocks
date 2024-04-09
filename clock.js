@@ -1,14 +1,17 @@
-function updateclock(){
-    const now=new Date();
-    let hour=now.getHours();
-    const meridiem=hour>=12?"PM":"AM";
-    hour=hour % 12 || 12;
-    hour=hour.toString().padStart(2,0);
-    const minute=now.getMinutes().toString().padStart(2,0);
-    const second=now.getSeconds().toString().padStart(2,0);
-    const timeString=`${hour}:${minute}:${second} ${meridiem}`;
-    document.getElementById("clock").textContent=timeString;
-}
-
-updateclock();
-setInterval(updateclock,1000);
+function updateClock() {
+    const now = new Date();
+    const hour = String(now.getHours()).padStart(2, '0');
+    const minute = String(now.getMinutes()).padStart(2, '0');
+    const second = String(now.getSeconds()).padStart(2, '0');
+    
+    document.getElementById('hour').textContent = hour;
+    document.getElementById('minute').textContent = minute;
+    document.getElementById('second').textContent = second;
+  }
+  
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+  
+  // Initial call to display the clock immediately
+  updateClock();
+  
