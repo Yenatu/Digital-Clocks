@@ -14,4 +14,3 @@ function updateClock() {
   
   // Initial call to display the clock immediately
   updateClock();
-  
